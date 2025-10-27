@@ -42,9 +42,9 @@ jobs:
         with:
           # Сам текст сообщения, которое будет добавлено в комментарий.
           message: |
-            You can check this code at CodeSandbox with the link
-            # Формируем динамическую ссылку.
-            # `github.repository` — это имя вашего репозитория (например, "username/project-name").
-            # `github.head_ref` — это название ветки, из которой был создан PR.
-            # В итоге ссылка будет выглядеть так: https://githubbox.com/username/project-name/tree/feature-branch
+            ###### You can check this code at CodeSandbox with the link
+            Формируем динамическую ссылку.
+            `github.repository` — это имя вашего репозитория (например, "username/project-name").
+            github.head_ref` — это название ветки, из которой был создан PR.
+            В итоге ссылка будет выглядеть так: https://githubbox.com/username/project-name/tree/feature-branch
             https://githubbox.com/${{ github.repository }}/tree/${{ github.head_ref }}
